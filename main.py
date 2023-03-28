@@ -1,14 +1,14 @@
 # TASK: Update both functions to reverse the letters in the name and provide the square root of the users age.
-
 def reverseName(myName):
-  # Write your function here
-  result = myName
-  return result
-  
+  newname = ''
+  x = (len(myName))
+  while x > 0:
+    x = x-1
+    newname = newname+myName[x]
+  return str(newname)
+
 def rootAge(myAge):
-  # Wrie your function here
-  result = myAge
-  return result
+  return int(myAge)**2
   
 me = input("What is your name? ")
 im = input("What is your age? ")
